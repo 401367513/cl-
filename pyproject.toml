@@ -1,0 +1,21 @@
+[project]
+name = "cl-project"
+version = "0.1.0"
+description = "Python project with CI + AI code review"
+requires-python = ">=3.10"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "UP", "B", "C4", "SIM"]
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.mypy]
+ignore_missing_imports = true
